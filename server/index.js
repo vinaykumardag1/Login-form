@@ -20,6 +20,9 @@ app.post('/register', (req, res) => {
         .then(user => res.json(user))
         .catch(err => res.status(400).json("Error: " + err));
 });
+app.get("/",(req,res)=>{
+    res.send("backend works")
+})
 
 app.post('/login', (req, res) => {
     const {email,password}=req.body;
