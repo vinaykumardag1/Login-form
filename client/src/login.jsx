@@ -12,7 +12,7 @@ const Login = () => {
 
     const submit=(e)=>{
      e.preventDefault()
-      const user=axios.post("http://localhost:5000/login",{email,password})
+      const user=axios.post("https://login-form-backend-hi12.onrender.com/login",{email,password})
       .then((res)=>{console.log(res)
         if(res.data==="success"){
           navigate("/home")
