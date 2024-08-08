@@ -8,7 +8,8 @@ const NewModel = require('./user');
 
 app.use(bodyParser.json());
 app.use(cors({
-    origin: "*"
+    origin: "https://login-form-backend-hi12.onrender.com".
+    method:["GET","POST"]
 }));
 
 
