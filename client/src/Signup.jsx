@@ -15,7 +15,7 @@ const Signup = () => {
         alert("Please enter your name")
       }else{
         e.preventDefault()
-        const user=axios.post("https://login-form-backend-hi12.onrender.com",{name,email,password})
+        const user=axios.post("https://login-form-backend-hi12.onrender.com/register",{name,email,password})
       .then((res)=>{console.log(res)
       navigate("/login")
     })
