@@ -11,7 +11,7 @@ app.use(cors({
     origin: "*"
 }));
 
-mongoose.connect("mongodb+srv://vinaykumardag1:<password>@atlascluster.8tdja.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://vinaykumardag1:vinayKOT@105@atlascluster.8tdja.mongodb.net/?retryWrites=true&w=majority&login_form=AtlasCluster", { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("mongodb is connected"))
     .catch(err => console.log("Database connection error:", err));
 
